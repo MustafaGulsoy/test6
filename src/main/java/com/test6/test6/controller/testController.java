@@ -14,7 +14,7 @@ public class testController {
     @GetMapping("/getexample")
     public ResponseEntity<String> example()
     {
-        return ResponseEntity.ok("sd");
+        return ResponseEntity.ok("sds");
 
     }
 }
