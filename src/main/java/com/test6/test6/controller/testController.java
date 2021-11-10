@@ -2,19 +2,36 @@ package com.test6.test6.controller;
 
 
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/test6")
+@RequestMapping("/api")
 public class testController {
 
-    @GetMapping("/getexample")
-    public ResponseEntity<String> example()
+    @PostMapping("/adduser")
+    public ResponseEntity<String> adduser(@RequestBody String  id)
+    {       
+
+        return ResponseEntity.ok("sds");
+
+    }
+    @DeleteMapping("/deleteuser")
+    public ResponseEntity<String> deleteuser()
     {
         return ResponseEntity.ok("sds");
 
     }
+    @PutMapping("/create")
+    public ResponseEntity<String> create()
+    {
+        return ResponseEntity.ok("sds");
+
+    }
+    @GetMapping("/getlist")
+    public ResponseEntity<String> getlist()
+    {
+        return ResponseEntity.ok("sds");
+
+    }
+
 }
